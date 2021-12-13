@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/*FONTES CARALHO*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&family=Shadows+Into+Light&display=swap');
+@font-face {
+    font-family: 'idroid';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*FONTES CARALHO*/
+    body {
+        margin: 0;
+        margin-bottom: 50px;
+        background-color: #E9E6C3;
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+/*Header começa aqui*/
+header {
+        background-image: linear-gradient(to bottom,#39CF7C, #1A5C38);
+        color:white;
+}
+/*Links com fading, porém eles não levam e não precisam levar a lugar algum*/
+    a.hdr {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 4px ;
+        padding: 5px 10px;
+        text-align: center;
+        margin: 0px 2px;
+        transition: 0.3s;
+        display: inline-block ;
+        font-family: Arial, Helvetica, sans-serif;
+        
+}
+    .hdr:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+/*Links com fading, porém eles não levam e não precisam levar a lugar algum*/
+    h1.cabeçalho {
+        text-align: center;
+        font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 3em;
+}
+    p.cabeçalho {
+        font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+/*Header termina aqui*/
+
+/*Main, onde vai ficar os textos e imagens, configurado para ser responsivo*/
+    main {
+            background-color: whitesmoke;
+            margin: auto;
+            width: 800px;
+            float: left;
+            box-shadow: black 1px 0px 13px;
+            border-radius: 0px 0px 10px 10px;
+            flex: 1 0 auto;
+    }
+    @media screen and (max-width: 800px) {
+        main {
+            background-color: whitesmoke;
+            width: 100%;
+            margin: 0;
+
+        }
+    }
+    a.exlink{
+        background-color: #95f7c1;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 2px;
+    }
+    p{
+        text-indent: 30px;
+        margin: 5px 10px;
+        text-align: justify;
+        padding: 10px 0px;
+    }
+    h1 {
+        margin-left: 30px;
+        font-family: 'idroid';
+        color: #1A5C38;
+        text-align: left;
+        padding: 5px;
+    }
+    h2 {
+        color: #29553d;
+        margin: 5px 30px;
+        background-image: linear-gradient(to right, #95f7c1, whitesmoke);
+        font-family: 'idroid';
+        text-align: left;
+        
+
+    }
+
+    .img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .video {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+/*Main, onde vai ficar os textos e imagens, configurado para ser responsivo*/
+/*extra começa aqui, comaçarei organizando a lista com duas colunas, como eu vou deixar essa merda responsvia eu descubro depois*/
+.extra {
+    border-radius: 10px;
+    background-color: #C5EBD6;
+    margin: 5px 10px;
+}
+h3#extra {
+    background-color: #2FA866;
+    max-width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    padding: 7px;
+    color: whitesmoke; 
+}
+.list-extra{
+    columns: auto 2;
+}
+.list-a-extra{
+    color: black;
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+  }
+  
+  ul li:before {
+    content: '✓';
+  }
+/*extra termina aqui, não sabemos exatamente pq funciona, mas creio que ta pronto*/
+/*footer começa aqui, é izi, n tem erro*/
+
+#footer {
+    background-color: #F3F3F3;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+  footer {
+    height: max-content;
+    flex-shrink: 0; 
+    background-color: #1A5C38;
+    color: white;
+}
+#tfoot{
+    text-align: center;
+}
